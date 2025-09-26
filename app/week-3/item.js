@@ -1,13 +1,12 @@
-export default function item({name, quantity,category})
+ export default function Item({name, quantity,category})
 {
     return
     (
-        <div>
-            <list>
-                <h2>Item = {name}</h2>
-                <p1>quantity = {quantity}</p1>
-                <p2>category = {category}</p2>
-            </list>
-        </div>
+        <ul>
+            <li>
+                <h2>{name}</h2>
+                <p>buy {quantity} in {category}</p>
+            </li>
+        </ul>
     );
 }
