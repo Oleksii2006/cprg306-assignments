@@ -1,4 +1,4 @@
-import displayItems from "./item-list";
+import DisplayItems from "./item-list";
 export default function Page() {
   return (
     <main>
