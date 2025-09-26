@@ -71,11 +71,11 @@ const item12 = {
   category: "household",
 };
 
-export default function itemlist()
+export default function DisplayItems()
 {
     return(
     <>
-      <Item name={item1.name} quantity={item1.quantity} category={item1.category} />
+      <Item name={item1.name} quantity={item1.quanpmntity} category={item1.category} />
       <Item name={item2.name} quantity={item2.quantity} category={item2.category} />
       <Item name={item3.name} quantity={item3.quantity} category={item3.category} />
       <Item name={item4.name} quantity={item4.quantity} category={item4.category} />
