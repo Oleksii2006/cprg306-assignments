@@ -1,7 +1,7 @@
  export default function Item({name, quantity,category})
 {
-    return
-    (
+    return(
+        
         <ul>
             <li>
                 <h2>{name}</h2>
