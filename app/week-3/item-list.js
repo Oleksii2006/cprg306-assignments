@@ -71,7 +71,7 @@ const item12 = {
   category: "household",
 };
 
-export default function DisplayItems()
+export default function ItemList()
 {
     return(
     <div  className="flex flex-col items-center"> 
