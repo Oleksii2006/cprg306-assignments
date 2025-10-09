@@ -9,7 +9,7 @@ export default function NewItem() {
 
     const handleNameChange = (event) => {
         setName(event.target.value);
-        setCategory(event.target.value)
+
     }
     const handleCategoryChange = (event) => {
         
