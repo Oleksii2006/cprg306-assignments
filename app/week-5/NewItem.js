@@ -28,8 +28,7 @@ export default function NewItem() {
         }
     };
 
-        const baseButton =
-        "w-10 h-10 flex items-center justify-center rounded text-white text-xl font-bold transition-colors duration-200";
+
 
 
     const handleSubmit = (event) => {
