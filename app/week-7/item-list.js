@@ -27,7 +27,7 @@ export default function ItemList({ items }) {
   const sortedCategories = Object.keys(groupedItems).sort();
 
   return (
-    <div className="w-116 mx-auto space-y-6 mt-3 px-8">
+    <div className="w-116 mx-auto space-y-6 mt-3 px-8 bg-black">
 
       <div className="flex gap-2">
         <button

@@ -15,7 +15,7 @@ export default function Page() {
 
   return (
     <main>
-      <h1 className="text-4xl font-bold flex justify-center">Shopping List</h1>
+      <h1 className="text-4xl font-bold flex justify-center bg-black">Shopping List</h1>
 
     
       <NewItem onAddItem={handleAddItem} />

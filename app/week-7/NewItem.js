@@ -37,7 +37,7 @@ export default function NewItem({onAddItem}) {
             category: category,
         };
 
-        onAddItem(item); // ✅ fixed — pass item directly
+        onAddItem(item);
 
         setName("");
         setCategory("produce");
@@ -45,7 +45,7 @@ export default function NewItem({onAddItem}) {
     };
 
 return (
-    <main className="flex justify-center items-center min-h-screen bg-black">
+    <main className="flex justify-center items-center py-8 bg-black">
     <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center w-[350px]">
         <input type="text" placeholder="Item Name" value={nameField} onChange={handleNameChange} className="border border-gray-400 rounded w-full p-2 mb-3 text-black" />
         <div className="flex items-center justify-between w-full mb-4">
