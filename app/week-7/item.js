@@ -1,4 +1,13 @@
+import NewItem from "./NewItem";
+import ItemList from "./item-list";
+import itemData from "./items";
+import { useState } from "react";
+
 export default function Item({ item }) {
+    const [items, setItems] = useState(itemData);
+    const handleAddItem = (item) => {
+        setItems([...items, item]);
+  }
 
     let { name, quantity, category } = item;
     return (

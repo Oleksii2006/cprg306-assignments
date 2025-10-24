@@ -1,14 +1,27 @@
-import Item from "./item";
-import ItemList from "./item-list";
+"use client";
 
-export default function Page(){
-    return(
-        <main>
-            <h1 className="text-4xl 
-            font-bold
-            flex 
-            justify-center">Shopping List</h1>
-            <ItemList />
-        </main>
-    )
+import { useState } from "react";
+import NewItem from "./NewItem";
+import ItemList from "./item-list";
+import itemsData from "./items.json"; 
+
+export default function Page() {
+  const [items, setItems] = useState(itemsData);
+
+ 
+  const handleAddItem = (item) => {
+    setItems([...items, item]);
+  };
+
+  return (
+    <main>
+      <h1 className="text-4xl font-bold flex justify-center">Shopping List</h1>
+
+    
+      <NewItem onAddItem={handleAddItem} />
+
+  
+      <ItemList items={items} />
+    </main>
+  );
 }
