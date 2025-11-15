@@ -12,15 +12,18 @@ export default function Page() {
   const { user, firebaseSignOut } = useUserAuth();
   const router = useRouter();
 
-  // 🔥 BLOCK PAGE if user is not logged in
-  useEffect(() => {
-    if (user === null) {
-      router.push("/week-9"); // landing page
-    }
-  }, [user, router]);
 
-  // If user not loaded yet → return nothing (prevents flash)
-  if (user === undefined) return null;
+
+
+    if (user === null) {
+    return (
+      <main className="flex items-center justify-center h-screen">
+        <h1 className="text-2xl font-bold">
+          Please log in to view this page
+        </h1>
+      </main>
+    );
+  }
 
   function handleItemSelect(item) {
     const cleanName = item.name
@@ -59,7 +62,7 @@ export default function Page() {
           </div>
         </div>
 
-        {/* LOGOUT BUTTON */}
+
         <div className="mt-6">
           <button
             onClick={handleLogout}
